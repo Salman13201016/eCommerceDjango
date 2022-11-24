@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'daraz',
+    'django_extensions'
 ]
 
 MIDDLEWARE = [
@@ -86,7 +87,7 @@ DATABASES = {
         'USER': 'root',
         "PASSWORD":'',
         "HOST":'localhost',
-        "PORT": '8111',
+        "PORT": '3306',
     }
 }
 

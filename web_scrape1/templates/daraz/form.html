@@ -84,18 +84,30 @@
               </form>
             </div>
           </div>
-          <div class="footer-link padding-top--24">
-            <span>Don't have an account? <a href="">Sign up</a></span>
-            <div class="listing padding-top--24 padding-bottom--24 flex-flex center-center">
-              <span><a href="#">© Stackfindover</a></span>
-              <span><a href="#">Contact</a></span>
-              <span><a href="#">Privacy & terms</a></span>
+          <div class="  footer-link padding-top--24">
+            <table class="table table-dark">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Title</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for i in data %}
+                <tr>
+                  <td>{{ forloop.counter }}</td>
+                  <td>{{i.title}}</td>
+                </tr>
+                {% endfor %}
+              </tbody>
+            </table>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
+  
 </body>
 
 </html>
